@@ -1,0 +1,32 @@
+{
+  "files.eol": "\n",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript"
+  ],
+  "files.watcherExclude": {
+    "**/.git/**": true,
+    "**/node_modules/*/**": true,
+    "**/build/*/**": true,
+    "**/dist/*/**": true,
+    "**/.webpack/*/**": true,
+    "**/dump/*/**": true,
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/.webpack/*/**": true,
+    "**/build": true,
+    "**/dist": true,
+    "**/dump": true,
+    "**/package-lock.json": true,
+    "**/*.min.*": true,
+    "**/*.svg": true,
+  },
+  "search.autoSearch": "auto",
+  "compile-hero.disable-compile-files-on-did-save-code": true,
+  "editor.detectIndentation": false,
+}

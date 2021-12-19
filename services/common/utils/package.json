@@ -1,0 +1,11 @@
+{
+  "name": "@common/utils",
+  "version": "1.0.0",
+  "scripts": {
+    "tsc": "node ../../../node_modules/typescript/bin/tsc --build && ../../../node_modules/typescript/bin/tsc --noEmit",
+    "test":"ndoe ../../../node_modules/jest/bin/jest.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

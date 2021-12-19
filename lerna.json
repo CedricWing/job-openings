@@ -1,0 +1,8 @@
+{
+  "packages": [
+    "services/job-openings/api",
+    "services/job-openings/front",
+    "services/common/utils"
+  ],
+  "version": "1.0.4"
+}

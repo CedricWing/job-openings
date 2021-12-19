@@ -1,0 +1,29 @@
+.main-title-text {
+  font-size: 40px;
+  font-weight: 800;
+  padding-left: 0 !important;
+}
+.global-btn-group {
+  justify-content: end;
+  margin-top: 4em;
+  margin-bottom: 5em;
+
+  .global-btn {
+    margin-left: 1.5em;
+    min-width: 200px;
+  }
+}
+@media (max-width: 767.98px) {
+  .global-btn-group {
+    flex-direction: column;
+  }
+  .global-btn {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-bottom: 0.5rem;
+  }
+  .main-title-text {
+    font-size: 30px;
+    text-align: center;
+  }
+}

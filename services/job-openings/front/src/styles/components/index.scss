@@ -1,0 +1,104 @@
+.form-input-name {
+  width: 50% !important;
+  margin-right: 2rem;
+  min-height: 65px;
+}
+.form-check-input {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 1.25em !important;
+  margin-right: 1em;
+  margin-top: 0 !important;
+}
+.accordion-item {
+  background: #f7f7f7 !important;
+}
+.form-check-group {
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+}
+.form-check-text {
+  width: 350px;
+  display: inline-block;
+}
+.form-check-count {
+  padding: 0.15em 0.5em;
+  background: #e6e6e6;
+  border-radius: 1.25rem;
+}
+.accordion-body {
+  padding: 0 !important;
+  padding-top: 1.25rem !important;
+}
+.accordion-button:not(.collapsed) {
+  color: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: transparent !important;
+  outline: 0;
+  box-shadow: transparent !important;
+}
+.accordion-button {
+  width: auto !important;
+  margin-left: 1rem !important;
+  background-color: #f7f7f7 !important;
+}
+.team-card {
+  display: flex;
+  justify-content: space-between;
+}
+.form-check-label-group {
+  text-align: left;
+}
+.modal-btn {
+  margin-left: 0.5rem;
+}
+.form-input-count {
+  width: 15rem;
+  margin-right: 2em;
+  min-height: 65px;
+}
+.modal-name-label {
+  font-size: 16px;
+  font-weight: bold;
+}
+@media (max-width: 767.98px) {
+  .list-form-group {
+    flex-direction: column;
+  }
+  .form-input-name {
+    width: 100% !important;
+    margin-right: 2rem;
+  }
+  .form-check-group {
+    font-size: 14px !important;
+  }
+  .accordion-button {
+    margin-left: 0.2rem !important;
+  }
+  .team-card {
+    flex-direction: column;
+  }
+
+  .form-check-label-group {
+    width: 100%;
+    display: block;
+  }
+  .form-check-text {
+    width: calc(100% - 45px);
+  }
+  .team-card-btn-group {
+    margin-top: 0.5rem;
+    justify-content: flex-end !important;
+  }
+  .form-input-count {
+    width: 100% !important;
+  }
+  .form-input-btn {
+    width: 100% !important;
+  }
+}
