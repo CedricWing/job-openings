@@ -17,26 +17,29 @@ Install dependencies from root repo folder (typescript, eslint, lerna):
 
 ```
 In "../job-openings":
-npm install // install shared dependencies across packages (using lerna/monorepo concept)
-npm run tsc // executing typescript among all packages
-npm run lint // static lint checks
+
+npm install       // install shared dependencies across packages (using lerna/monorepo concept)
+npm run tsc       // executing typescript among all packages
+npm run lint      // static lint checks
 ```
 
 Install server (backend) dependencies and serve at http://localhost:8090
 
 ```
 In "../job-openings/services/job-openings/api"
-npm install // install project dependencies
-npm run dev // serves the development server and watches for any changes
+
+npm install      // install project dependencies
+npm run dev      // serves the development server and watches for any changes
 ```
 
 Install frontend dependencies and serve at http://localhost:8080
 
 ```
 In "../job-openings/services/job-openings/front"
-npm install // install project dependencies
-npm run dev // serves the development server and watches for any changes
-npm run test // runs local unit test for logic and components
+
+npm install     // install project dependencies
+npm run dev     // serves the development server and watches for any changes
+npm run test    // runs local unit test for logic and components
 ```
 
 # Main Technologies used
