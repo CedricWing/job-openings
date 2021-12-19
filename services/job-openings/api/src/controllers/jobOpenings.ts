@@ -2,6 +2,7 @@ import { JobOpenings } from '@common/utils/types';
 import { Request, Response } from 'express';
 import defaultJobOpenings from '../assets/default.json';
 
+// Mock fetch - data obtained from default json file
 export const getDefaultJobOpenings = (__req: Request, res: Response) => {
   try {
     console.log(`Retrieving default job openings...`);

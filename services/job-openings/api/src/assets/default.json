@@ -44,12 +44,7 @@
     },
     {
       "name": "Operation Team",
-      "jobs": [
-        {
-          "name": "Customer Success Manager",
-          "count": 3
-        }
-      ]
+      "jobs": []
     }
   ]
 }

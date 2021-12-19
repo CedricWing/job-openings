@@ -13,6 +13,7 @@ import {
   updatePositionInTeam,
 } from './helpers';
 
+// Acts as a custom hook which provides state and api interface to components
 const LOCAL_STORAGE_KEY = 'jobOpenings';
 export const useJobOpenings = () => {
   const api = useApi();

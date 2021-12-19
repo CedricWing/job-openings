@@ -1,8 +1,8 @@
 import { useCallback, useState } from 'react';
-
+// usecallback hook to reduce renders
 export const useCb = <T, S, R extends Array<S>>(fn: (...args: R) => T) =>
   useCallback(fn, []);
-
+// useloading hook used when consuming api
 export const useLoading = <T, S, R extends Array<S>>(
   fn: (...args: R) => Promise<T>,
   initialLoadingState = false,

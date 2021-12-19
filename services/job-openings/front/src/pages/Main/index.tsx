@@ -4,7 +4,7 @@ import { useJobOpenings } from '../../lib/jobOpenings';
 import TeamSection from './team';
 import DynamicForm from '../../components/DynamicForm';
 import '../../styles/pages/index.scss';
-
+// Contains the main page of the application - holds the other components with some global actions available
 const Main = () => {
   const jobOpeningsHook = useJobOpenings();
   const { data, loading, resetJobOpenings, saveJobOpenings } = jobOpeningsHook;

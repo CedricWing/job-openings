@@ -2,9 +2,9 @@
   "name": "@job-openings/api",
   "version": "1.0.4",
   "scripts": {
+    "lint": "eslint . --fix",
     "dev": "nodemon ./src/server/index.ts",
-    "tsc": "node ../../../node_modules/typescript/bin/tsc --noEmit",
-    "test": "node ../../../node_modules/jest/bin/jest.js"
+    "tsc": "node ../../../node_modules/typescript/bin/tsc --noEmit"
   },
   "dependencies": {
     "@common/utils": "file:../../common/utils",

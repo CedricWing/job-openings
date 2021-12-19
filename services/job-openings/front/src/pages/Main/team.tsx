@@ -5,7 +5,7 @@ import DynamicCheckBox from '../../components/DynamicCheckBox';
 import DynamicForm from '../../components/DynamicForm';
 import PositionSection from './position';
 import DynamicModal from '../../components/DynamicModal';
-
+// Contains team  relevant components
 type Props = {
   index: number;
   team: { name: string; jobs: Position[]; active: boolean };

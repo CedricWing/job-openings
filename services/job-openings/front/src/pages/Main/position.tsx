@@ -2,7 +2,7 @@ import React from 'react';
 import { Position } from '@common/utils/types';
 import DynamicCheckBox from '../../components/DynamicCheckBox';
 import DynamicModal from '../../components/DynamicModal';
-
+// Contains job position relevant components
 type Props = {
   index: string;
   teamName: string;

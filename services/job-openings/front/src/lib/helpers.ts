@@ -1,5 +1,5 @@
 import { Position, JobOpenings } from '@common/utils/types';
-
+// Data manipulation methods found here - fn names explain uses
 export const getItems = <T extends { name: string }>(
   items: T[],
   name: string,
@@ -41,11 +41,13 @@ export const togglePositionActive = (
   const teamsData = getItems(jobOpenings, teamName);
   const positionsData = getItems(teamsData.item?.jobs || [], name);
   const otherTeamData = positionsData.others;
+  // Here we set position data first
   otherTeamData.splice(positionsData.index, 0, {
     name: positionsData.item?.name || '',
     count: positionsData.item?.count || 0,
     active: !positionsData.item?.active,
   });
+  // Set team level data
   const otherJobsData = teamsData.others;
   otherJobsData.splice(teamsData.index, 0, {
     name: teamsData.item?.name || '',
@@ -71,7 +73,7 @@ export const insertNewPositionToTeam = (
 export const insertNewTeamToOpenings = (
   jobopenings: JobOpenings,
   teamName: string,
-) => [...jobopenings, { name: teamName, active: false, jobs: [] }];
+) => [{ name: teamName, active: false, jobs: [] }, ...jobopenings];
 
 export const updatePositionInTeam = (
   jobOpenings: JobOpenings,

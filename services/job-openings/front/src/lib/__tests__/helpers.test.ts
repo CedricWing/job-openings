@@ -221,8 +221,8 @@ describe('lib-helpers-tests : insertNewTeamToOpenings', () => {
   });
   it('should insert team into job openings', () => {
     expect(insertNewTeamToOpenings(SAMPLE_JOB_OPENINGS, 'New Team')).toEqual([
-      ...SAMPLE_JOB_OPENINGS,
       newteam,
+      ...SAMPLE_JOB_OPENINGS,
     ]);
   });
 });

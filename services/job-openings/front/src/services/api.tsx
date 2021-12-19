@@ -6,6 +6,7 @@ import * as yup from 'yup';
 import { useCb } from '../lib/hooks';
 import { ApiContext } from '../components/ApiProvider/context';
 
+// Mini axios interface to consume backend api
 class JobOpeningsApi {
   api: AxiosInstance;
 
@@ -25,7 +26,7 @@ class JobOpeningsApi {
     }
   };
 }
-
+// Schema to validate data coming from server
 const schema = yup
   .object({
     teams: yup
@@ -57,7 +58,7 @@ const validateJobOpeningsData = async (
     throw Error('Schema for default job openings invalid');
   return data.teams;
 };
-
+// Api instance to be provided as a state to other components
 export const useApiInstance = () => {
   const handle = new JobOpeningsApi();
   const getDefaultJobOpenigns = useCb(

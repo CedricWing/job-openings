@@ -2,8 +2,10 @@
   "name": "@job-openings/front",
   "version": "1.0.0",
   "scripts": {
+    "lint": "eslint . --fix",
     "dev": "react-scripts start",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "tsc": "node ../../../node_modules/typescript/bin/tsc --build && node ../../../node_modules/typescript/bin/tsc --noEmit"
   },
   "dependencies": {
     "@common/utils": "file:../../common/utils",
